@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fedibirdログ整形ツール</title>
+  <title>Fediverseログ整形ツール</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="tool-shell">
     <header class="tool-hero">
       <p class="tool-kicker">Fedibird Log Formatter</p>
-      <h1>Fedibirdログ整形ツール</h1>
-      <p>Fedibirdのoutbox.jsonを読み込み、HTML配布用・ふせったー貼り付け用に整形します。処理はブラウザ内だけで行われます。</p>
+      <h1>Fediverseログ整形ツール</h1>
+      <p>Fediverseの○○.jsonを読み込み、HTML配布用・ふせったー貼り付け用に整形します。処理はブラウザ内だけで行われます。</p>
     </header>
 
     <section class="tool-panel">
       <h2>1. JSONを読み込む</h2>
       <label class="file-drop">
         <input id="jsonFile" type="file" accept=".json,application/json">
-        <span>outbox.jsonを選択</span>
+        <span>jsonファイルを選択</span>
       </label>
       <textarea id="jsonPaste" rows="8" placeholder="または、JSONの中身をここに貼り付け"></textarea>
       <button id="loadPaste" type="button">貼り付けたJSONを読み込む</button>
@@ -28,8 +28,8 @@
     <section class="tool-panel">
       <h2>2. 出力設定</h2>
       <div class="form-grid">
-        <label>含める語句<input id="includeWords" type="text" placeholder="例：庭師, 自探"></label>
-        <label>除外する語句<input id="excludeWords" type="text" placeholder="例：KP, メモ"></label>
+        <label>含める語句<input id="includeWords" type="text" placeholder="例：猫、ご飯"></label>
+        <label>除外する語句<input id="excludeWords" type="text" placeholder="例：秘密、ネタバレ"></label>
         <label>除外する投稿ID<input id="excludeIds" type="text" placeholder="カンマ区切り"></label>
         <label>最大件数<input id="limitCount" type="number" min="1" value="300"></label>
       </div>
