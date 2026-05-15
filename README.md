@@ -1,11 +1,11 @@
-# Fedibirdログ整形ツール
+# Fediverseログ整形ツール
 
-Fedibirdのoutbox.jsonをブラウザ上で読み込み、HTMLまたはふせったー貼り付け用テキストに整形する静的ツールです。
+Fediverseのログjsonファイルをブラウザ上で読み込み、HTMLまたはふせったー貼り付け用テキストに整形する静的ツールです。
 
 ## 使い方
 
 1. `index.html` をブラウザで開く
-2. Fedibirdから取得した `outbox.json` を選択、またはJSON本文を貼り付ける
+2. Fediverseから取得した `○○.json` を選択、またはJSON本文を貼り付ける
 3. 含める語句・除外語句・CWの出し方を選ぶ
 4. 「整形する」を押す
 5. HTML保存、HTMLコピー、ふせったー用テキストコピーを使う
